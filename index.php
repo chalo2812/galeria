@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" 
   	  xmlns:fb="http://www.facebook.com/2008/fbml">
 	<head>
-		<title>RCI</title>
+		<title>Galeria</title>
 	</head>
 	<body>
 		<link rel="shortcut icon" href="img/favicon/favicon.ico">
