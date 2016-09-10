@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" 
-  	  xmlns:fb="http://www.facebook.com/2008/fbml">
+<html xmlns="http://www.w3.org/1999/xhtml" >
 	<head>
 		<title>Galeria</title>
 	</head>
 	<body>
-		<link rel="shortcut icon" href="img/favicon/favicon.ico">
+		<link rel="shortcut icon" href="img/favicon.ico">
 	 	<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/datepicker.css" rel="stylesheet">
 		<link href="css/galeria.css" rel="stylesheet">
@@ -15,12 +14,12 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery-ui.min.js"></script>
 		<script src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
-		<section>
+		<!--section>
 			<article>
 				<fb:login-button size="small" scope="email,public_profile" /></fb:login-button>
 				<div id="fbStatus"></div>
 			</article>
-		</section>		
+		</section-->		
 		<?php
 			$enlace=mysql_connect('localhost:3306', 'root', '','galeria')
 			or die( "Error - conexion erronea." );
@@ -43,17 +42,17 @@
 //Versión de la API v2.7
 //Identificador de la aplicación 1655979491385081
 //Clave secreta de la aplicación 4f2ce85db62967c4271adaffb49804c9
-$(function() {
-  $.ajax({
-    url: '//connect.facebook.net/es_ES/all.js',
-    dataType: 'script',
-    cache: true,
-    success: function() {
+//$(function() {
+  //$.ajax({
+   // url: '//connect.facebook.net/es_ES/all.js',
+    //dataType: 'script',
+    //cache: true,
+    //success: function() {
       
-    }
-  });
-});
+    //}
+  //});
+//});
 </script>
-		<script src="js/facebookSDK.js"></script>	
+		<!--script src="js/facebookSDK.js"></script-->	
 	</body>
 </html>
