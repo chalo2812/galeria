@@ -2,6 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
 	<title>Galeria</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class='main-menu'>
 	<link rel="shortcut icon" href="img/favicon.ico">
@@ -18,45 +20,50 @@
 	
 	<ul class="nav nav-pills">
 		<li role="presentation">
-			<a href="/" class="dropdown-toggle" data-toggle="dropdown" href="#" 	role="button" aria-haspopup="true" aria-expanded="false">
-				Genero <span class="caret"></span>
+			<a href="/" class="dropdown-toggle col-sm-1 col-xs-2" 
+				data-toggle="dropdown" href="#" role="button" 
+				aria-haspopup="true" 
+				aria-expanded="false">Genero <span class="caret"></span>
 				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					<li class="nav nav-pills"> <a href="#">Arquitectura </a></li>
+					<li class="nav nav-pills dropdown-toggle col-sm-1 col-xs-2" > 
+						<a href="#">Arquitectura </a>
+					</li>
 				</ul>
 			</a>
 		</li>
-		<li >	
-			<a href="/" title="Titulo">
+		<li class="dropdown-toggle col-sm-1 col-xs-2"  >	
+			<a href="/" >
 				Artistas
 			</a>
 		</li>
-		<li >	
-			<a href="/" title="Titulo">
+		<li class="dropdown-toggle col-sm-1 col-xs-2"  >	
+			<a href="/" >
 				Colecci&oacute;n
 			</a>
 		</li>
-		<li >	
-			<a href="/" title="Titulo">
+		<li class="dropdown-toggle col-sm-1 col-xs-2" >	
+			<a href="/" >
 				Agenda
 			</a>
 		</li>
-		<li >
-			<a href="/" title="Titulo">
+		<li class="dropdown-toggle col-sm-1 col-xs-2" >
+			<a href="/" >
 				Blog
 			</a>
 		</li>
-		<li >
-			<a href="/" title="Titulo">
+		<li class="dropdown-toggle col-sm-1 col-xs-2" >
+			<a href="/" >
 				Iniciar Sesi&oacute;n
 			</a>
 		</li>
-		<li >
-			<a href="/" title="Titulo">
+		<li class="dropdown-toggle col-sm-1 col-xs-2"  >
+			<a href="/" >
 				Registrarse
 			</a>
 		</li>
-		<li >
-			<a href="/" title="Titulo">Titulo</a></li>				
+		<li class="dropdown-toggle col-sm-1 col-xs-2" >
+			<a href="/" >Titulo</a>
+		</li>				
 		<a href="/" title="Titulo" class="" >
 			<img src="/img/logo.png" alt="" style="">
 		</a>
