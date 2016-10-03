@@ -18,7 +18,6 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
-	<script src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
 
 </head>
 <body>
@@ -29,12 +28,10 @@
     		</div>
     		<ul class="nav navbar-nav">
     			<li class="dropdown">
-        			<a href="#"><img src="" alt="">Genero<span class="caret"></span></a>
-        								
-				</li>
-				<li class="dropdown">
-        			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Genero<span class="caret"></span></a>
         			<ul class="dropdown-menu nav navbar-nav"">
+						<li class="nav navbar-nav">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Genero<span class="caret"></span></a>
+        				</li>
 						<li class="nav navbar-nav">
 							<a class="navbar-brand" href="#">Arquitectura </a>
 						</li>
@@ -56,8 +53,11 @@
 				<li >
 				</li>
 				<li class="text-left">
-					<a href="/" >
-					<span class="glyphicon glyphicon-log-in"> </span> Iniciar Sesi&oacute;n</a>
+					
+					<button type="button" class="text-left" data-toggle="modal" data-target="#myModal">
+						<span class="glyphicon glyphicon-log-in"> Iniciar Sesi&oacute;n</span>
+					</button>
+					
 				</li>
 				<li class="text-left">
 					<a href="/signup.php"  >
@@ -86,6 +86,33 @@
 	?>
 		
 	</div>
+	<div style="overflow:hidden;" class="dp.show">
+		<div class="form-group">
+        	<div class="row">
+            	<div class="col-md-8">
+               		<div style="overflow:hidden;">
+            	</div>
+        	</div>
+    	</div>
+    </div>
+    <div id="myModal" class="modal fade" role="dialog">
+ 		<div class="modal-dialog">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Modal Header</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>Some text in the modal.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+  	</div>
+</div>
 	<footer>
 		Revisi&oacute;n 
 	</footer>
@@ -93,17 +120,19 @@
 //Versión de la API v2.7
 //Identificador de la aplicación 1655979491385081
 //Clave secreta de la aplicación 4f2ce85db62967c4271adaffb49804c9
-//$(function() {
-  //$.ajax({
-   // url: '//connect.facebook.net/es_ES/all.js',
-    //dataType: 'script',
-    //cache: true,
-    //success: function() {
+$(function() {
+	$.ajax({
+    	url: '//connect.facebook.net/es_ES/all.js',
+    	dataType: 'script',
+
+    	cache: true,
+    	success: function() {
       
-    //}
-  //});
-//});
+    	}
+  		});
+	});
 </script>
 		<!--script src="js/facebookSDK.js"></script-->	
 	</body>
 </html>
+
