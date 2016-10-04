@@ -30,11 +30,8 @@
     			<li class="dropdown">
         			<ul class="dropdown-menu nav navbar-nav"">
 						<li class="nav navbar-nav">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Genero<span class="caret"></span></a>
+							<span class="dropdown-toggle" data-toggle="dropdown" >Genero<span class="caret"></span></span>
         				</li>
-						<li class="nav navbar-nav">
-							<a class="navbar-brand" href="#">Arquitectura </a>
-						</li>
 					</ul>					
 				</li>
 				<li>
@@ -49,15 +46,12 @@
 				<li>
 					<a href="/" >Blog</a>
 				</li>
-				<li class="divider"></li>
-				<li >
-				</li>
-				<li class="text-left">
-					
-					<button type="button" class="text-left" data-toggle="modal" data-target="#myModal">
-						<span class="glyphicon glyphicon-log-in"> Iniciar Sesi&oacute;n</span>
-					</button>
-					
+				<li>
+					<a data-toggle="modal" href="#myModal" data-target="#myModal">
+						<span type="button" class="navbar-inverse glyphicon glyphicon-log-in" data-toggle="modal"  border="0">
+							Iniciar Sesi&oacute;n
+					</span>
+					</a>
 				</li>
 				<li class="text-left">
 					<a href="/signup.php"  >
@@ -86,32 +80,35 @@
 	?>
 		
 	</div>
-	<div style="overflow:hidden;" class="dp.show">
-		<div class="form-group">
-        	<div class="row">
-            	<div class="col-md-8">
-               		<div style="overflow:hidden;">
-            	</div>
-        	</div>
-    	</div>
-    </div>
-    <div id="myModal" class="modal fade" role="dialog">
- 		<div class="modal-dialog">
-	    <!-- Modal content-->
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Modal Header</h4>
-	      </div>
-	      <div class="modal-body">
-	        <p>Some text in the modal.</p>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
 
-  	</div>
+    <div class="container">
+		<div class="row">
+			<a class="btn btn-primary" data-toggle="modal" href="#myModal" >Login</a>
+        	<div class="modal" id="myModal">
+          		<div class="modal-header">
+            		<button type="button" class="close" data-dismiss="modal">x</button>
+            		<h3>Login to MyWebsite.com</h3>
+          		</div>
+          		<div class="modal-body">
+            	<form method="post" action='' name="login_form">
+              		<p>
+              			<input type="text" class="span3" name="eid" id="email" placeholder="Email">
+              		</p>
+              		<p>
+              			<input type="password" class="span3" name="passwd" placeholder="Password">
+              		</p>
+              		<p>
+              			<button type="button"  class="btn btn-primary">Sign in</button>
+                		<a href="#">Olvidaste la contrase&ntilde;a Password?</a>
+              		</p>
+            	</form>
+          	</div>
+	        <div class="modal-footer">
+	            <a href="#" class="btn btn-secundary">Register</a>
+	        </div>
+        </div>
+	</div>
+</div>
 </div>
 	<footer>
 		Revisi&oacute;n 
@@ -135,4 +132,3 @@ $(function() {
 		<!--script src="js/facebookSDK.js"></script-->	
 	</body>
 </html>
-
